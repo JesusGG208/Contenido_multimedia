@@ -1,4 +1,24 @@
-.contenedor {
+* {
+    background-color: rgb(255, 228, 196);
     text-align: center;
+}
+
+button {
+    background-color: rgb(236, 192, 138);
+    border: none;
+    padding: 10px;
+    font-size: medium;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: rgb(249, 151, 30);
+    box-shadow: 0px 5px 12px -5px rgba(0,0,0,0.6);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: rgb(89, 72, 51);
 }
 

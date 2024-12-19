@@ -12,8 +12,22 @@
     <div class="contenedor">
         <h1>Contenido multimedia</h1>
         <section>
-            <h2>Vídeo</h2>
+            <h2>Vídeo con atributo controls</h2>
             <video width="560" height="315" controls>
+                <source src="smash.mp4" type="video/mp4">
+                El contenido no puede ser reproducido.
+            </video>
+        </section>
+        <section>
+            <h2>Vídeo con métodos, propiedades y eventos</h2>
+            <p>
+                <button id="pausaPlay" onclick="pausaPlay()">Play</button>
+                <button onclick="convertirPequenyo()">Pequeño</button>
+                <button onclick="convertirNormal()">Normal</button>
+                <button onclick="convertirGrande()">Grande</button>
+                <button id="muteDesmute" onclick="silenciarDesilenciar()">Silenciar</button>
+            </p>
+            <video id="unVideo" width="560" height="315">
                 <source src="smash.mp4" type="video/mp4">
                 El contenido no puede ser reproducido.
             </video>
@@ -28,9 +42,14 @@
         <section>
             <h2>Vídeo de YouTube</h2>
             <!--Esto ha sido copiado del modo de inserción de YouTube-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Gk2yg_aX7xI?si=QkSCFlGIgNs6Ztux&amp;start=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/Gk2yg_aX7xI?si=QkSCFlGIgNs6Ztux&amp;start=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
