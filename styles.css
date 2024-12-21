@@ -19,6 +19,7 @@ button {
     background-color: rgb(176, 236, 236);
     border: none;
     font-family: fuente-boton;
+    color: rgb(40, 40, 121);
     padding: 10px;
     font-size: medium;
     border-radius: 50px;
